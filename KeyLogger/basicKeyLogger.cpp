@@ -28,7 +28,7 @@ int main() {
 int Save(int _key, char* file) {
     cout << _key << endl;
     Sleep(10);
-    FILE* OUTPUT_FILE; // can also use the ofstream command
+    FILE* OUTPUT_FILE; 
     if (fopen_s(&OUTPUT_FILE, file, "a+") != 0) {
         return 1; 
     }
